@@ -1,0 +1,608 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Technews Supreme v0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-03 18:50+0530\n"
+"PO-Revision-Date: 2014-01-03 18:50+0530\n"
+"Last-Translator: admin <shakil.templatic@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ default
+# @ templatic
+#: author.php:46 loop-excerpt.php:49 loop.php:48
+#: functions/custom_functions.php:131 functions/loadpopularpost.php:111
+#: functions/loadpost.php:70 functions/widget_functions.php:462
+#: functions/widget_functions.php:619 functions/widget_functions.php:937
+msgid "ago"
+msgstr ""
+
+# @ templatic
+#: author.php:50 loop-excerpt.php:53 loop.php:53
+#: functions/widget_functions.php:623 functions/widget_functions.php:939
+msgid "No Comments"
+msgstr ""
+
+#: author.php:50 loop-excerpt.php:53 loop.php:53
+#: functions/widget_functions.php:623 functions/widget_functions.php:939
+msgid "<i class=\"fa fa-comment\"></i> 1"
+msgstr ""
+
+#: author.php:50 loop-excerpt.php:53 loop.php:53
+#: functions/widget_functions.php:623 functions/widget_functions.php:939
+msgid " <i class=\"fa fa-comment\"></i> % "
+msgstr ""
+
+# @ templatic
+#: author.php:50 loop-excerpt.php:53 loop.php:53
+#: functions/widget_functions.php:623 functions/widget_functions.php:939
+msgid "Comments Closed"
+msgstr ""
+
+# @ supreme
+#: author.php:61 loop-excerpt.php:71 loop.php:71 post.php:80 singular.php:85
+msgid ""
+"Filed under: [entry-terms taxonomy=\"category\"] [entry-terms taxonomy="
+"\"post_tag\" before=\"and Tagged: \"]"
+msgstr ""
+
+# @ supreme
+#: comment.php:32
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: content.php:20
+#, php-format
+msgid ""
+"<i class=\"fa fa-user\"></i> [entry-author] <i class=\"fa fa-clock-o\"></i> "
+"[entry-published] <i class=\"fa fa-comments\"></i> [entry-comments-link zero="
+"\"Respond\" one=\"%1$s\" more=\"%1$s\"] [entry-edit-link] [entry-permalink]"
+msgstr ""
+
+# @ default
+#: functions.php:42
+msgid "You do not have sufficient permissions to access this section."
+msgstr ""
+
+#: loop-author.php:29 loop-meta.php:32 loop-meta.php:49 loop-meta.php:101
+#: functions/widget_functions.php:543
+msgid "List View"
+msgstr ""
+
+#: loop-author.php:30 loop-meta.php:33 loop-meta.php:50 loop-meta.php:102
+#: functions/widget_functions.php:544
+msgid "Grid View"
+msgstr ""
+
+# @ supreme
+#: loop-excerpt.php:64 loop.php:64 post.php:75 singular.php:80
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+# @ templatic
+# @ supreme
+#: loop-excerpt.php:65 loop.php:65 post.php:76 singular.php:81
+msgid "Pages:"
+msgstr ""
+
+# @ supreme
+#: loop-excerpt.php:82 loop.php:82
+msgid "No Entries"
+msgstr ""
+
+# @ templatic
+#: loop-excerpt.php:86 loop.php:86
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+# @ supreme
+#: loop-meta.php:108
+#, php-format
+msgid "You are browsing the search results for \"%s\""
+msgstr ""
+
+# @ supreme
+#: loop-meta.php:117
+msgid "Archives by date"
+msgstr ""
+
+# @ supreme
+#: loop-meta.php:121
+msgid "You are browsing the site archives by date."
+msgstr ""
+
+# @ supreme
+#: loop-meta.php:145
+msgid "Archives"
+msgstr ""
+
+# @ supreme
+#: loop-meta.php:149
+msgid "You are browsing the site archives."
+msgstr ""
+
+# @ supreme
+#: menu-primary.php:20 menu-secondary.php:20
+msgid "Menu"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:4
+msgid "Search this website"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:5
+msgid "Search"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:6
+msgid "Category"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:7 page-template-advanced_search.php:50
+msgid "select category"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:8
+msgid "Date"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:9
+msgid "<span>to</span>"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:10
+msgid "Author"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:11
+msgid "Exact author"
+msgstr ""
+
+# @ templatic
+#: page-template-advanced_search.php:12
+msgid "Please enter word you want to search"
+msgstr ""
+
+#: page-template-advanced_search.php:69
+msgid "From"
+msgstr ""
+
+#: page-template-advanced_search.php:70
+msgid "To"
+msgstr ""
+
+#: page-template-advanced_search.php:84
+msgid "Submit"
+msgstr ""
+
+# @ templatic
+#: post.php:12 singular.php:12
+msgid "Visits today"
+msgstr ""
+
+# @ templatic
+#: post.php:13 singular.php:13
+#, php-format
+msgid "Visited %s times"
+msgstr ""
+
+# @ supreme
+#: post.php:27 singular.php:27
+msgid ""
+"<i class=\"fa fa-clock-o\"></i> [entry-published] <i class=\"fa fa-user\"></"
+"i> [entry-author] "
+msgstr ""
+
+# @ templatic
+#: post.php:130 singular.php:135
+msgid "Previous post"
+msgstr ""
+
+# @ templatic
+#: post.php:156 singular.php:161
+msgid "Next post"
+msgstr ""
+
+#: sidebar-subsidiary.php:19
+msgid "Back to top"
+msgstr ""
+
+#: templatic_login.php:107
+msgid "The new version of "
+msgstr ""
+
+#: templatic_login.php:109
+msgid ""
+"You can update to the latest version automatically , or download the latest "
+"version of the theme."
+msgstr ""
+
+#: templatic_login.php:110
+msgid "Warning"
+msgstr ""
+
+#: templatic_login.php:110
+msgid ""
+"Updating will undo all your file customizations so make sure to keep backup "
+"of all files before updating."
+msgstr ""
+
+#: templatic_login.php:111
+msgid "Download latest Version"
+msgstr ""
+
+# @ templatic
+#: templatic_login.php:122 functions/custom_functions.php:103
+#: functions/custom_functions.php:119 functions/loadpopularpost.php:125
+#: functions/loadpost.php:101 functions/widget_functions.php:57
+#: functions/widget_functions.php:169 functions/widget_functions.php:172
+#: functions/widget_functions.php:384 functions/widget_functions.php:541
+#: functions/widget_functions.php:738 functions/widget_functions.php:870
+#: functions/widget_functions.php:985 functions/widget_functions.php:1057
+#: functions/widget_functions.php:1189
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: templatic_login.php:131
+msgid ""
+"Enter your templatic login credentials to update your TechNews theme to the "
+"latest version."
+msgstr ""
+
+# @ templatic
+#: templatic_login.php:135
+msgid "User Name"
+msgstr ""
+
+# @ templatic
+#: templatic_login.php:139
+msgid "Password"
+msgstr ""
+
+# @ templatic
+#: templatic_login.php:144
+msgid "Cancel"
+msgstr ""
+
+#: templatic_login.php:158
+msgid "You have the latest version of "
+msgstr ""
+
+#: templatic_login.php:159
+#, php-format
+msgid "<strong>Your version:</strong> %s"
+msgstr ""
+
+#: wp-updates-theme.php:54 wp-updates-theme.php:108
+msgid "There is a new version of TechNews available."
+msgstr ""
+
+# @ templatic
+#: wp-updates-theme.php:54 wp-updates-theme.php:108
+#, php-format
+msgid "View version %s Details"
+msgstr ""
+
+#: wp-updates-theme.php:59 wp-updates-theme.php:113
+msgid "or <a href=\""
+msgstr ""
+
+#: functions/custom_functions.php:419
+msgid "FaceBook Like  buttons"
+msgstr ""
+
+#: functions/custom_functions.php:426
+msgid "FaceBook AppID"
+msgstr ""
+
+#: functions/custom_functions.php:431
+msgid "Google Plus buttons"
+msgstr ""
+
+#: functions/custom_functions.php:438
+msgid "Twitter Share buttons"
+msgstr ""
+
+#: functions/custom_functions.php:445
+msgid "Stumble Upon buttons"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:452
+msgid "Content Excerpt \"Read More\" Link Text"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:459
+msgid "Primary : Main headings, Titles, Links"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:465
+msgid "Secondary : Navigation hover, Link hover, Headings hover, Selected"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:471
+msgid "Content"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:477
+msgid "Subtexts"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:483
+msgid "Footer background & Navigation hover"
+msgstr ""
+
+# @ templatic
+#: functions/custom_functions.php:489
+msgid "Change color of Body Background"
+msgstr ""
+
+#: functions/loadpopularpost.php:73
+msgid " View "
+msgstr ""
+
+#: functions/loadpopularpost.php:75
+msgid " Views "
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:7
+msgid "Above Header: Primary Menu Right Area"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:8
+msgid "Header: Right area"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:9
+msgid "Front Content"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:10
+msgid "Single post: Below Content"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:75 functions/widget_functions.php:509
+#: functions/widget_functions.php:711 functions/widget_functions.php:756
+#: functions/widget_functions.php:827 functions/widget_functions.php:1035
+#: functions/widget_functions.php:1153
+msgid "Title"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:76 functions/widget_functions.php:757
+#: functions/widget_functions.php:829
+msgid ""
+"Advertisement code <small>(ex.&lt;a href=\"#\"&gt;&lt;img src=\"http://"
+"templatic.com/banner.png\" /&gt;&lt;/a&gt; and google ads code here )</small>"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:91
+msgid "Latest Post with slider"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:92
+msgid "T &rarr; Homepage Slider"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:323 functions/widget_functions.php:969
+msgid "Title:"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:329
+msgid "Category Short Description :"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:335 functions/widget_functions.php:972
+msgid "Number of posts:"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:341 functions/widget_functions.php:991
+msgid "Categories (<code>IDs</code> separated by commas):"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:347
+msgid "Post Per Slide"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:352
+msgid "Auto Play"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:360
+msgid "Sliding Speed"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:470
+msgid "More News"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:510
+msgid "Categories id (comma seperated)"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:512 functions/widget_functions.php:713
+#: functions/widget_functions.php:1037 functions/widget_functions.php:1155
+msgid "Total Number of Posts"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:514
+msgid "More News Link"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:541
+msgid "Latest entries"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:667
+msgid "Load More Articles"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:715
+msgid "View Type"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:717
+msgid "Pagination Type"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:853
+msgid "Post with image and date"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:854
+msgid "T &rarr; Post with image and date"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:939
+msgid "by"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:939
+msgid "at"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:941
+msgid "more..."
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:977
+msgid "Post Type:"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:1157
+msgid "Number of Posts Per Slide"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:1159
+msgid "Shows post as per view counting/comments"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:1160
+msgid "Total views"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:1161
+msgid "Daily views"
+msgstr ""
+
+# @ templatic
+#: functions/widget_functions.php:1162
+msgid "Total comments"
+msgstr ""
+
+#: functions/widget_functions.php:1178
+msgid ""
+"A simple contact form where site visitors can send you a message with their "
+"name and email address."
+msgstr ""
+
+#: functions/widget_functions.php:1179
+msgid "T &rarr; Contact us"
+msgstr ""
+
+#: functions/widget_functions.php:1239
+msgid "Thank you, your information is sent successfully."
+msgstr ""
+
+#: functions/widget_functions.php:1244
+msgid "Please fill out all the fields before submitting."
+msgstr ""
+
+#: functions/widget_functions.php:1295
+msgid "Please Enter Name"
+msgstr ""
+
+#: functions/widget_functions.php:1330
+msgid "Please Enter valid Email"
+msgstr ""
+
+#: functions/widget_functions.php:1349
+msgid "Please Enter Subject"
+msgstr ""
+
+#: functions/widget_functions.php:1366
+msgid "Please Enter Message"
+msgstr ""
+
+#: functions/widget_functions.php:1384
+msgid "Name"
+msgstr ""
+
+#: functions/widget_functions.php:1389
+msgid "Email"
+msgstr ""
+
+#: functions/widget_functions.php:1394
+msgid "Subject"
+msgstr ""
+
+#: functions/widget_functions.php:1399
+msgid "Message"
+msgstr ""
+
+#: functions/widget_functions.php:1403
+msgid "Send"
+msgstr ""
+
+#: functions/widget_functions.php:1423
+msgid "Widget Title"
+msgstr ""

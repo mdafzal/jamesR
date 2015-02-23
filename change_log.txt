@@ -1,0 +1,214 @@
+Templatic theme - TechNews (Version 2.0 Initial lauched at 22nd Jan 2013)
+==================================================================================================================================================================================================================
+31st January 2014 (Version : 2.0.7)
+------------------------------------------------------------------------
+Fix: Fatal error was coming up when wp-content folder name was changed
+---------------------------------------------------------------------------
+functions/loadpost.php
+------------------------------------------------------------------
+Fix:  Search widget button styling for subsidiary widget area
+--------------------------------------------------------------
+style.css
+--------------------------------------------------------------
+Fix: General PHP notices and warnings related improvement in code
+--------------------------------------------------------------
+functions.php
+templatic_login.php
+wp-updates-theme.php
+-------------------------------------------------------
+
+28th December 2013 (Version: 2.0.6)
+-----------------------------------------------
+Fix: FontAwesome version was updated
+-----------------------------------------------
+Deleted files:
+-----------------------
+/font
+css/font-awesome-ie7.css
+css/font-awesome.css
+
+Modified files:
+-------------------
+author.php
+comment.php
+content.php
+css/admin-style.php
+functions/custom_functions.php
+functions/loadpopularpost.php
+functions/loadpost.php
+functions/widget_functions.php
+functions.php
+js/jquery.flexslider.js
+languages/en_US.po
+loop-author.php
+loop-excerpt.php
+loop-meta.php
+loop.php
+menu-primary.php
+menu-secondary.php
+post.php
+sidebar-subsidiary.php
+singular.php
+style.css
+------------------------------------------------------
+17th June 2013 (Version : 2.0.5)
+----------------------------
+FIX : Removed extra widgets.
+----------------------------
+functions/widget_functions.php
+
+------------------------------------------------
+FIX :
+Design of social sharing strip for left sidebar page.
+Issues with WordPress 3.6 latest version.
+------------------------------------------------
+style.css
+
+-----------------------------------------
+FIX : Images were missing from autoinstall.
+-----------------------------------------
+functions/auto_install/auto_install_data.php
+
+--------------------------
+FIX : logo responsive issue.
+--------------------------
+header.php
+
+-------------------------------------------------------
+FIX : Issue of social sharing strip touch to menu item bar.
+-------------------------------------------------------
+singular.php
+style.css
+
+
+
+14th May 2013 (Version : 2.0.4)
+----------------------------------------------------------------------------------------
+New page creation with the Default Template and Default page layour not working - Solved.
+----------------------------------------------------------------------------------------
+New added file :
+singular.php
+
+--------------------------------------------------------
+Bullet points weren't displaying on the detail page - Solved.
+Slider design & Front content widget area design - Fixed.
+Issue of megamenu design - Solved.
+--------------------------------------------------------
+style.css
+
+-----------------------------------------------------------------------
+Do not show image and below content sidebar in page detail page - Fixed.
+-----------------------------------------------------------------------
+singular.php
+
+
+
+18th April 2013 (Version : 2.0.3)
+-------------------------------
+Added autoupdate script - Done.
+-------------------------------
+functions.php
+functions/custom_functions.php
+style.css
+templatic_login.php
+wp-updates-theme.php
+
+------------------------------
+Slider auto play issue - Solved.
+------------------------------
+functions/widget_functions.php
+header.php
+js/jquery.flexslider.js
+
+---------------------------------------------------------------------------------------------------------------
+Fetch featured image first, then fetch first image if no feature image has been set otherwise fetch no image - Done.
+---------------------------------------------------------------------------------------------------------------
+functions/loadpopularpost.php
+functions/loadpost.php
+functions/widget_functions.php
+post.php
+
+-------------------------------------------------------
+Slider design & Front content widget area design - Soved.
+-------------------------------------------------------
+New added files:
+images/post_next1.png
+images/post_prev1.png
+
+Modified file :
+style.css
+
+
+
+19th March 2013 (Version : 2.0.2)
+---------------------------------------
+Compatibility for WooCommerce2 - Done.
+---------------------------------------
+Modified files :
+footer.php
+functions/widget_functions.php
+style.css
+
+Deleted file :
+images/social-media-footer.png
+images/social-media.png
+images/star.png
+
+New added files :
+woocommerce.php
+images/facebook.jpg
+images/google.jpg
+images/rss.jpg
+images/twitter.jpg
+
+
+
+6th March - 2013 (v:2.0.1)
+------------------------------------------
+Issue of e-commerces review star - Solved.
+------------------------------------------
+Modified file :
+style.css
+
+New added file : 
+images/star.png
+
+-------------------------------------------------------
+Issue of home page pagination was not working - Solved.
+-------------------------------------------------------
+functions/custom_functions.php
+functions/widget_functions.php
+
+--------------------------------------------------------------------------------
+Remove horizontal scroll bar mobile display, set top header search position - Solved.
+Menu responsive width issue - Solved.
+--------------------------------------------------------------------------------
+style.css
+
+----------------------------------------------------------
+media uploader not working when favicon set issue - Solved.
+----------------------------------------------------------
+functions.php
+
+--------------------------------------------------------
+set load-themes.php action when multisite active - Solved.
+--------------------------------------------------------
+wp-updates-theme.php
+
+-----------------------------------------------------------
+facebook popup not display properly in chrome issue - Solved.
+facebook display not properly issue - Solved.
+-----------------------------------------------------------
+post.php
+style.css
+
+---------------------------
+prevent fatal error - Solved.
+---------------------------
+functions/widget_functions.php
+functions.php
+
+-----------------------------------------
+Issues of an update related issue - Solved.
+-----------------------------------------
+wp-updates-theme.php

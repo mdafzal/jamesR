@@ -1,0 +1,30 @@
+<?php
+/**
+ * Subsidiary Sidebar Template
+ *
+ * Displays widgets for the Subsidiary dynamic sidebar if any have been added to the sidebar through the 
+ * widgets screen in the admin by the user.  Otherwise, nothing is displayed.
+ *
+ * @package supreme
+ * @subpackage Template
+ */
+
+if ( is_active_sidebar( 'subsidiary' ) ) : ?>
+<?php do_atomic( 'before_sidebar_subsidiary' ); // supreme_before_sidebar_subsidiary ?>
+
+<div id="sidebar-subsidiary" class="sidebar sidebar-1c sidebar-subsidiary">
+<div class="sidebar-wrap">
+<?php do_atomic( 'open_sidebar_subsidiary' ); // supreme_open_sidebar_subsidiary ?>
+
+	<a href="javascript:void(0)" class="backtotop"><?php _e('Back to top','templatic'); ?> <i class="fa fa-arrow-up"></i></a>
+
+<?php dynamic_sidebar( 'subsidiary' ); ?>
+<?php do_atomic( 'close_sidebar_subsidiary' ); // supreme_close_sidebar_subsidiary ?>
+</div>
+<!-- .sidebar-wrap --> 
+
+</div>
+<!-- #sidebar-subsidiary -->
+
+<?php do_atomic( 'after_sidebar_subsidiary' ); // supreme_after_sidebar_subsidiary ?>
+<?php endif; ?>
