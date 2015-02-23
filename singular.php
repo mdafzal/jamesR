@@ -17,7 +17,7 @@ get_header(); // Loads the header.php template. ?>
 
 <div id="content">
 <?php do_atomic( 'open_content' ); // supreme_open_content ?>
-<div class="hfeed">
+<div class="hfeed singular-php">
 <?php get_sidebar( 'before-content' ); // Loads the sidebar-before-content.php template. ?>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -35,6 +35,17 @@ get_header(); // Loads the header.php template. ?>
 								<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>
                                
 								<div class="entry-content">
+<?php  
+
+/* EDITED BY Jim Ryan
+
+/* Inserted page links here
+
+*/
+
+/*wp_link_pages( array( 'before' => '<p class="page-links TechNews-singluar-php">' . __( 'Pages:', 'supreme' ), 'after' => '</p>' ) ); 
+
+/* END EDIT */ ?>
                                          <div class="social_content">
   									<?php if(technews_hybrid_get_setting('fb_like_button') || technews_hybrid_get_setting('plusone_button') || technews_hybrid_get_setting('twitter_share_button') || technews_hybrid_get_setting('stumble_upon_button')) { floating_social_sharing_button(); }  ?>
                                 </div>
@@ -63,7 +74,7 @@ get_header(); // Loads the header.php template. ?>
 									 <?php 
 									 $category = get_the_category($post->ID);
 									 if($category){ ?>
-									 <div class="cat_cont">
+									 <div style="display:none;" class="cat_cont">
 									 <?php
 									 for($ci = 0; $ci<= count($category); $ci ++){
 									 if($category[$ci]->cat_name != 'Uncategorized' && $category[$ci]->cat_name) { ?>
@@ -73,12 +84,22 @@ get_header(); // Loads the header.php template. ?>
 								</div>
 									<?php } } ?></div><?php } if( $post->post_type != 'page' )
 									{?>
-										<a href="<?php echo $crop_image; ?>"> <img src="<?php echo $crop_image; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" /> </a> 
+										<!-- <a href="<?php echo $crop_image; ?>"> <img src="<?php echo $crop_image; ?>" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" /> </a>  -->
 									<?php 
 									}
 								?>
 																<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'supreme' ) ); ?>
-																<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'supreme' ), 'after' => '</p>' ) ); ?>
+<?php  
+
+/* EDITED by Jim Ryan 
+
+/* Removed this line and moved it further up
+
+wp_link_pages( array( 'before' => '<p class="page-links TechNews-singluar-php">' . __( 'Pages:', 'supreme' ), 'after' => '</p>' ) ); 
+
+/* END EDIT
+
+*/ ?>
 								</div>
 								<!-- .entry-content -->
 	

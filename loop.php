@@ -9,7 +9,7 @@
  */
 ?>
 <?php global $displaytype; ?>
-<div id="latestpostloop" class="<?php if ($displaytype == 'grid') {  echo 'grid'; } else{ echo 'list clear'; } ?>" >
+<div id="latestpostloop" class="<?php if ($displaytype == 'grid') {  echo 'grid'; } else{ echo 'list clear'; } ?> TechNews-loop" >
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php do_atomic( 'before_entry' ); // supreme_before_entry ?>

@@ -18,23 +18,7 @@
 			'post_type' => 'post',
 			'posts_per_page' => $number,
 			'post_status' => array('publish'),
-			'order'=>'DESC',
-
-                        'tax_query' => array(
-
-	                        array(
-
-                                'taxonomy' => 'category',
-
-                                'field' => 'slug',
-
-                                'terms' => 'not-recent-post',
-
-                                'operator' => 'NOT IN',
-
-                                ),
-
-                         )
+			'order'=>'DESC'
 		);	
 				
 	$latest_post2 = new WP_Query($args);
@@ -50,7 +34,7 @@
 			$guid = get_permalink($post->ID);
 			
 		$posthtml .= '<div class="post_list">'; 
-		$posthtml .= '<div class="postimageview loadpost-php">';
+		$posthtml .= '<div class="postimageview">';
 
 				$post_images =  bdw_get_images_with_info($post->ID,'image-thumb');   
 				$attachment_id = $post_images[0]['id'];

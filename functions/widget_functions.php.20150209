@@ -599,17 +599,13 @@ if(!class_exists('templ_header_ads')){
                     ?>
 					<div class="post_list">
                         <div class="postimageview widget_functions-2">
-
 <?php /* EDITED BY Jim Ryan
-
  ORIGINAL: */ ?>
                           <a href="<?php the_permalink(); ?>"> <img class="Thumbnail thumbnail event-home-thumb img" src="<?php echo $post_images;?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></a>
 <?php /* NEW */ ?>
-
 <a href="<?php the_permalink(); ?>"> <img class="alignleft" src="<?php echo $post_images;?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></a>
-
 <?php /* END EDIT */ ?>
-                            <?php
+                          <?php
                           $category = get_the_category($post->ID);
                           $category_link = get_category_link($category[0]->cat_ID );
                           if($category[0]->cat_name != 'Uncategorized' && get_post_type($post->ID) != 'page') {

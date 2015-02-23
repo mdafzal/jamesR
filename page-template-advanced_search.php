@@ -17,7 +17,7 @@ define('SEARCH_ALERT_MSG',__('Please enter word you want to search','templatic')
 <?php if ( current_theme_supports( 'breadcrumb-trail' ) && hybrid_get_setting('supreme_show_breadcrumb')) breadcrumb_trail( array( 'separator' => '&raquo;' ) ); ?>
 <div id="content" class="multiple">
   <?php do_atomic( 'open_content' ); // supreme_open_content ?>
-  <div class="hfeed">
+  <div class="hfeed page-templage-advanced_search-php">
     <!--  CONTENT AREA START -->
     <div class="entry">
       <h1 class="entry-title"><?php the_title(); ?></h1>

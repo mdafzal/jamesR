@@ -1,0 +1,75 @@
+/*
+
+File:	 custom.css
+
+Description:	Custom styles for your theme
+
+
+To properly utilize custom.css you will have to mention a CSS class and it's new properties/values. For 
+
+instructions open the following article:
+
+http://templatic.com/docs/using-custom-css-for-theme-customizations/
+
+
+PS: Don't forget to activate custom.css in your theme settings area
+
+
+ADD YOUR CODE AFTER THIS ENDING COMMENT TAG -----------> */ 
+
+.sidebar .widget, .newsflash, div.arclist, #advancedsearch, .author_box {
+	background:none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.share-facebook{
+	position:relative;
+	top:-6px;
+}
+
+.share-twitter{
+	position:relative;
+	top:-6px;
+}
+
+.share-email, .share-print{
+	position:relative;
+	top:-2px;
+}
+
+#twitter_timeline-2 {
+	text-align:center;
+}
+
+#twitter_timeline-2 h3{
+	text-align:left;
+	margin-bottom:20px;
+}
+
+div.gallery {
+	margin-left: 30px;
+	width: 100%;
+}
+
+div.alignright {
+	float:right;
+}
+
+div.alignleft {
+	float:left;
+}
+
+img.banner {
+	float:right;
+	width:600px;
+}
+
+div.postcontentview {
+	max-height: 195px;
+	overflow: hidden;
+}
+
+a.widget-title {
+	max-height:160px;
+	overflow: hidden;
+}

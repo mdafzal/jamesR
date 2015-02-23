@@ -17,7 +17,7 @@ get_header(); // Loads the header.php template. ?>
 
 <div id="content">
 <?php do_atomic( 'open_content' ); // supreme_open_content ?>
-<div class="hfeed post-php">
+<div class="hfeed">
 <?php get_sidebar( 'before-content' ); // Loads the sidebar-before-content.php template. ?>
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -73,7 +73,7 @@ get_header(); // Loads the header.php template. ?>
 									<?php 
 								?>
 																<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'supreme' ) ); ?>
-																<?php wp_link_pages( array( 'before' => '<p class="page-links TechNews-post-php">' . __( '', 'supreme' ), 'after' => '</p>' ) ); ?>
+																<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'supreme' ), 'after' => '</p>' ) ); ?>
 								</div>
 								<!-- .entry-content -->
 	

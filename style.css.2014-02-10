@@ -15,13 +15,13 @@
     /* Importing the parent theme stylesheet. */
     @import url( '../supreme/style.css' );
     
-    @import url(https://fonts.googleapis.com/css?family=Crete+Round);
+    @import url(http://fonts.googleapis.com/css?family=Crete+Round);
     /* font-family: 'Crete Round', Georgia, Times, serif; font-weight: 400; */
     
-    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+    @import url(http://fonts.googleapis.com/css?family=Montserrat);
     /* font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-weight: 400; */
 	
-	@import url(https://fonts.googleapis.com/css?family=Shanti|Crete+Round:400,400italic);
+	@import url(http://fonts.googleapis.com/css?family=Shanti|Crete+Round:400,400italic);
     
 	/* Licence: The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0. http://fortawesome.github.com/Font-Awesome*/
     @font-face {

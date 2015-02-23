@@ -12,7 +12,7 @@
 
 	<?php if ( is_home() && !is_front_page() ) : ?>
 
-		<div class="loop-meta">
+		<div class="loop-meta TechNews-loop-meta-php">
 
 			<h1 class="loop-title"><?php echo get_post_field( 'post_title', get_queried_object_id() ); ?></h1>
 
@@ -24,7 +24,7 @@
 
 	<?php elseif ( is_category() ) : ?>
 
-		<div class="loop-meta advancedlatestpost">
+		<div class="loop-meta TechNews-loop-meta">
 
 			<h1 class="loop-title"><?php single_cat_title(); ?></h1>
 			<?php global $displaytype; ?>

@@ -1,4 +1,4 @@
-<div class="postimageview">
+<div class="postimageview content-php">
 		<?php 
 		if ( current_theme_supports( 'get-the-image' ) ) : 	
 		get_the_image(array('post_id'=> get_the_ID(),'size'=>'event-home-thumb','image_class'=>'img','default_image'=>get_stylesheet_directory_uri()."/images/img_not_available.png"));					

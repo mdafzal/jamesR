@@ -21,6 +21,8 @@
 	  }
 	$ppost = get_option('widget_advanced_popularposts');
 	$popular_per = $ppost[1]['popular_per'];
+	if ($popular_per == '')
+		$popular_per = 'views';
 	$number = $ppost[1]['number'];
         $now = gmdate("Y-m-d H:i:s",time());
         $lastmonth = gmdate("Y-m-d H:i:s",gmmktime(date("H"), date("i"), date("s"), date("m")-12,date("d"),date("Y")));
@@ -36,22 +38,14 @@
 					'orderby' => 'meta_value_num',
 					'meta_value_num'=>'viewed_count',
 					'order' => 'DESC',
-
-                                        'tax_query' => array(
-
-                                            array(
-
-                                                'taxonomy' => 'category',
-
-                                                'field' => 'slug',
-
-                                                'terms' => 'not-recent-post',
-
-                                                'operator' => 'NOT IN',
-
-                                                ),
-
-                                         )
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'category',
+                                'field' => 'slug',
+                                'terms' => 'not-recent-post',
+                                'operator' => 'NOT IN',
+                                ),
+                         )
 					);
 	}elseif($popular_per == 'dailyviews'){
 		$args_popular=array(
@@ -63,22 +57,14 @@
 					'orderby' => 'meta_value_num',
 					'meta_value_num'=>'viewed_count_daily',
 					'order' => 'DESC',
-
-                                        'tax_query' => array(
-
-                                            array(
-
-                                                'taxonomy' => 'category',
-
-                                                'field' => 'slug',
-
-                                                'terms' => 'not-recent-post',
-
-                                                'operator' => 'NOT IN',
-
-                                                ),
-
-                                         )
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'category',
+                                'field' => 'slug',
+                                'terms' => 'not-recent-post',
+                                'operator' => 'NOT IN',
+                                ),
+                         )
 					);
 	}else{		
 		$args_popular=array(
@@ -88,22 +74,14 @@
 					'paged'=>$num,					
 					'orderby' => 'comment_count',					
 					'order' => 'DESC',
-
-                                        'tax_query' => array(
-
-                                            array(
-
-                                                'taxonomy' => 'category',
-
-                                                'field' => 'slug',
-
-                                                'terms' => 'not-recent-post',
-
-                                                'operator' => 'NOT IN',
-
-                                                ),
-
-                                         )
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'category',
+                                'field' => 'slug',
+                                'terms' => 'not-recent-post',
+                                'operator' => 'NOT IN',
+                                ),
+                         )
 					);
 	}
 
@@ -146,7 +124,7 @@ if($popular_post_query){
 				}
 				$posthtml .= '<li>';
 			
-					$posthtml .= '<div class="postimageview loadpopularpost-php"><a href="'. $guid .'" class="postimg"><img src="'.$first_img.'" alt="'.$post_title.'" title="'.$post_title.'" /></a></div>';
+					$posthtml .= '<div class="postimageview"><a href="'. $guid .'" class="postimg"><img src="'.$first_img.'" alt="'.$post_title.'" title="'.$post_title.'" /></a></div>';
 				
 				$posthtml .= '<div class="postcontentview">';
                 //$d = 'comment' == $type ? 'get_comment_time' : 'get_post_time';

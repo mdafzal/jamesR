@@ -35,23 +35,7 @@
 					'meta_key'=>'viewed_count',
 					'orderby' => 'meta_value_num',
 					'meta_value_num'=>'viewed_count',
-					'order' => 'DESC',
-
-                                        'tax_query' => array(
-
-                                            array(
-
-                                                'taxonomy' => 'category',
-
-                                                'field' => 'slug',
-
-                                                'terms' => 'not-recent-post',
-
-                                                'operator' => 'NOT IN',
-
-                                                ),
-
-                                         )
+					'order' => 'DESC'
 					);
 	}elseif($popular_per == 'dailyviews'){
 		$args_popular=array(
@@ -62,23 +46,7 @@
 					'meta_key'=>'viewed_count_daily',
 					'orderby' => 'meta_value_num',
 					'meta_value_num'=>'viewed_count_daily',
-					'order' => 'DESC',
-
-                                        'tax_query' => array(
-
-                                            array(
-
-                                                'taxonomy' => 'category',
-
-                                                'field' => 'slug',
-
-                                                'terms' => 'not-recent-post',
-
-                                                'operator' => 'NOT IN',
-
-                                                ),
-
-                                         )
+					'order' => 'DESC'
 					);
 	}else{		
 		$args_popular=array(
@@ -87,23 +55,7 @@
 					'posts_per_page' => $end,
 					'paged'=>$num,					
 					'orderby' => 'comment_count',					
-					'order' => 'DESC',
-
-                                        'tax_query' => array(
-
-                                            array(
-
-                                                'taxonomy' => 'category',
-
-                                                'field' => 'slug',
-
-                                                'terms' => 'not-recent-post',
-
-                                                'operator' => 'NOT IN',
-
-                                                ),
-
-                                         )
+					'order' => 'DESC'
 					);
 	}
 
@@ -127,7 +79,7 @@ if($popular_post_query){
 				$comments = $post->comment_count;
 				}
                 $guid = get_permalink($post->ID);
-				$first_post_title=substr($post_title,0,200);
+				$first_post_title=substr($post_title,0,26);
 				
 				$post_images =  bdw_get_images_with_info($post->ID,'popular-thumb');   
 				$attachment_id = $post_images[0]['id'];
@@ -146,7 +98,7 @@ if($popular_post_query){
 				}
 				$posthtml .= '<li>';
 			
-					$posthtml .= '<div class="postimageview loadpopularpost-php"><a href="'. $guid .'" class="postimg"><img src="'.$first_img.'" alt="'.$post_title.'" title="'.$post_title.'" /></a></div>';
+					$posthtml .= '<div class="postimageview"><a href="'. $guid .'" class="postimg"><img src="'.$first_img.'" alt="'.$post_title.'" title="'.$post_title.'" /></a></div>';
 				
 				$posthtml .= '<div class="postcontentview">';
                 //$d = 'comment' == $type ? 'get_comment_time' : 'get_post_time';
@@ -158,9 +110,9 @@ if($popular_post_query){
 				}
 				$fv = human_time_diff($du, current_time('timestamp')) . " " . __('ago','templatic');
 				if($popular_per == 'views' || $popular_per == 'dailyviews'){
-				$posthtml .= '<span class="byline poppost-byline"><i class="fa fa-clock-o"></i>'.$fv.'</span><span class="views poppost-views"><i class="fa fa-views"></i>'.$views.'</span><a class="poppost-title" href="'.$guid.'" title="'.$post_title.'">'.$first_post_title.'</a></div<></li>';
+				$posthtml .= '<span class="byline"><i class="fa fa-clock-o"></i>'.$fv.'</span><span class="views">'.$views.'</span><a href="'.$guid.'" title="'.$post_title.'">'.$first_post_title.'</a></div<></li>';
 				}else{
-				$posthtml .= '<span class="byline poppost-byline"><i class="fa fa-clock-o"></i>'.$fv."</span><span class='byline poppost-comments'><i class='fa fa-comment'></i>".$comments.'</span><h2><a class="poppost-title" href="'.$guid.'" title="'.$post_title.'">'.$first_post_title.'</a></h2></div></li>';
+				$posthtml .= '<span class="byline"><i class="fa fa-clock-o"></i>'.$fv."</span><span class='byline'><i class='fa fa-comment'></i>".$comments.'</span><h2><a  href="'.$guid.'" title="'.$post_title.'">'.$first_post_title.'</a></h2></div></li>';
 				}
         		endwhile;wp_reset_query();
 			}

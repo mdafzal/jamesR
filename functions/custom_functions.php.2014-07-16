@@ -284,9 +284,17 @@ function floating_social_sharing_button()
 				<div style="clear:both;"></div>
             </li>
 		<?php } 
-		
+		if(technews_hybrid_get_setting('stumble_upon_button'))
+		{ ?>
+            <li>
+                <script src="http://www.stumbleupon.com/hostedbadge.php?s=5" type="text/javascript"></script>
+				<div class="subscribe-share-box count">
+				<?php $postid = $post->ID;?>
+				<script type='text/javascript'>digg_url= '<?php echo get_permalink($postid); ?>';</script>
 
-				?>
+				</div>
+            </li>
+			<?php } ?>
         </ul>
         <div style="clear:both;"></div>
     </div>

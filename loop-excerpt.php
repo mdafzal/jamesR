@@ -10,7 +10,7 @@
 ?>
 
 		<?php global $displaytype; ?>
-<div id="latestpostloop" class="<?php if ($displaytype == 'grid') {  echo 'grid'; } else{ echo 'list clear'; } ?>" >
+<div id="latestpostloop" class="<?php if ($displaytype == 'grid') {  echo 'grid'; } else{ echo 'list clear'; } ?> TechNews-loop-excerpt" >
 <?php if ( have_posts() ) : ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <?php do_atomic( 'before_entry' ); // supreme_before_entry ?>
@@ -20,7 +20,7 @@
 	<div class="postimageview">
 		<?php 
 			if ( current_theme_supports( 'get-the-image' ) ) : 	
-			get_the_image(array('post_id'=> get_the_ID(),'size'=>'event-home-thumb','image_class'=>'img','default_image'=>get_stylesheet_directory_uri()."/images/img_not_available.png"));					
+			get_the_image(array('post_id'=> get_the_ID(),'size'=>'image-thumb','image_class'=>'img','default_image'=>get_stylesheet_directory_uri()."/images/img_not_available.png"));					
 			endif; ?>
 		
 			
@@ -50,7 +50,7 @@
 				?>
 				<abbr class="published"><i class="fa fa-clock-o"></i><?php echo $fv; ?></abbr>
 					<span class="author vcard"><i class="fa fa-user"></i><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" class="url fn n" title="Posts by <?php the_author(); ?>"><?php the_author(); ?></a></span>
-				<?php comments_popup_link(__('No Comments','templatic'), __('<i class="fa fa-comment"></i> 1','templatic'), __(' <i class="fa fa-comment"></i> % ','templatic'), '', __('Comments Closed','templatic')); ?>
+				<?php /* comments_popup_link(__('No Comments','templatic'), __('<i class="fa fa-comment"></i> 1','templatic'), __(' <i class="fa fa-comment"></i> % ','templatic'), '', __('Comments Closed','templatic')); */ ?>
 		</div>
 		
 		<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title]' ); ?>

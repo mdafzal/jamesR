@@ -431,7 +431,7 @@ if(!class_exists('templ_header_ads')){
           <li id="post_<?php the_ID(); ?>">
           		<div <?php if($pcount == 1) { ?> class="firstpost" <?php } ?>>
 						<?php if($pcount <= 2) { ?>
-                        <div class="postimageview widget_functions-1">
+                        <div class="postimageview">
                          <?php $post_images =  bdw_get_images_with_info($post->ID,'image-thumb');   
 							$attachment_id = $post_images[0]['id'];
 							$alt = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
@@ -598,18 +598,9 @@ if(!class_exists('templ_header_ads')){
 									
                     ?>
 					<div class="post_list">
-                        <div class="postimageview widget_functions-2">
-
-<?php /* EDITED BY Jim Ryan
-
- ORIGINAL: */ ?>
+                        <div class="postimageview">
                           <a href="<?php the_permalink(); ?>"> <img class="Thumbnail thumbnail event-home-thumb img" src="<?php echo $post_images;?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></a>
-<?php /* NEW */ ?>
-
-<a href="<?php the_permalink(); ?>"> <img class="alignleft" src="<?php echo $post_images;?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" /></a>
-
-<?php /* END EDIT */ ?>
-                            <?php
+                          <?php
                           $category = get_the_category($post->ID);
                           $category_link = get_category_link($category[0]->cat_ID );
                           if($category[0]->cat_name != 'Uncategorized' && get_post_type($post->ID) != 'page') {
@@ -1113,11 +1104,11 @@ if($content_type->name!='nav_menu_item' && $content_type->name!='attachment' && 
 				}?>
             <div class="postpagination">
             	<?php if($dot != 1) { ?>
-                    <a rel="0" rev="<?php echo $slide; ?>" class="active">1</a>
+                    <a rel="0" rev="<?php echo $slide; ?>" class="active">&nbsp;</a>
                     <?php
                         for($c = 1; $c < $dot; $c++) {
                             $start = ($c * $slide);
-                            echo '<a num="'.($c+1).'" rel="'.$start.'" rev="'.$slide.'">'.($c+1).'</a>';
+                            echo '<a num="'.($c+1).'" rel="'.$start.'" rev="'.$slide.'">&nbsp;</a>';
                         }
                     ?>
                     <div style="clear:both;"></div>

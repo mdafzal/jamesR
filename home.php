@@ -21,7 +21,7 @@ get_header(); // Loads the header.php template. ?>
 
 
 	
-<div class="hfeed">
+<div class="hfeed home-php">
 	
 <?php get_template_part( 'loop-meta' ); // Loads the loop-meta.php template. ?>
 <?php get_sidebar( 'before-content' ); // Loads the sidebar-before-content.php template. ?>

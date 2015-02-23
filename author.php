@@ -18,7 +18,7 @@ get_header(); // Loads the header.php template. ?>
 <div id="content">
 	
 	<?php do_atomic( 'open_content' ); // supreme_open_content ?>	
-	<div class="hfeed">
+	<div class="hfeed author-php">
 	
 		<?php get_template_part( 'loop-author' ); // Loads the loop-author.php template. ?>
 	
@@ -30,7 +30,7 @@ get_header(); // Loads the header.php template. ?>
 				<?php while ( have_posts() ) : the_post(); ?>			
 				<?php do_atomic( 'before_entry' ); // supreme_before_entry ?>			
 						<div id="post-<?php the_ID(); ?>" class="post_list">						
-							<div class="postimageview"><?php
+							<div class="postimageview author-php"><?php
 							get_the_image(array('post_id'=> get_the_ID(),'link_to_post'=>'false','size'=>'image-thumb','image_class'=>'post_img img listimg','default_image'=>get_stylesheet_directory_uri()."/images/img_not_available.png"));
 							?></div>
 							<!-- List view image -->
